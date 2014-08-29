@@ -1,7 +1,8 @@
 ////////////////////////////////////////////////////////////////////////
 // Austin Price
-// Started: 8/28/2014
 // Due:     9/2/2014
+// CSE2-111
+//
 // Welcome Class java program
 // 
 //  first compile the program
@@ -25,6 +26,6 @@ public class WelcomeClass {
         System.out.println(" \\ /\\ /\\ /\\ /\\ /\\ / ");
         System.out.println("  v  v  v  v  v  v  ");
 // Print Statement about yourself (tweet length)
-        System.out.println("I was named to the All-Rookie Team in the Patriot League for basketball and led the \nteam in Three point shots made with 52.");
+        System.out.println("I was named to the All-Rookie Team in the Patriot League for basketball and led the \nteam in three point shots made with 52.");
     }
 }
