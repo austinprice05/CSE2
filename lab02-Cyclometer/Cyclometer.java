@@ -33,7 +33,7 @@ public class Cyclometer {
         distanceTrip1=countsTrip1*wheelDiameter*PI;
         // Above gives distance in inches
         // (for each count, a rotation of the wheel travels the diameter in inches * PI
-        distanceTrip1/=inchesPerFoot/feetPerMile; // distance in miles
+        distanceTrip1/=inchesPerFoot*feetPerMile; // distance in miles
         distanceTrip2=countsTrip2*wheelDiameter*PI/inchesPerFoot/feetPerMile; // distance in miles
         totalDistance=distanceTrip1+distanceTrip2;
         // Print out the output data
