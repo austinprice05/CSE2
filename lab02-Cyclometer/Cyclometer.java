@@ -26,13 +26,16 @@ public class Cyclometer {
         secondsPerMinute=60; // conversion from minute to secs
         double distanceTrip1, distanceTrip2,totalDistance; //
         //Print time it took for trip and number of counts
-        System.out.println("Trip 1 took "+ (secsTrip1/secondsPerMinute) +" minutes and had "+ (countsTrip1)+ " counts.");
-        System.out.println("Trip 2 took "+ (secsTrip2/secondsPerMinute) +" minutes and had "+ (countsTrip2)+ " counts.");
+        System.out.println("Trip 1 took "+ (secsTrip1/secondsPerMinute) 
+            +" minutes and had "+ (countsTrip1)+ " counts.");
+        System.out.println("Trip 2 took "+ (secsTrip2/secondsPerMinute) 
+            +" minutes and had "+ (countsTrip2)+ " counts.");
         //run the calculations; store the values. 
         //Document calculations here. calculating distance of trip in miles
         distanceTrip1=countsTrip1*wheelDiameter*PI;
         // Above gives distance in inches
-        // (for each count, a rotation of the wheel travels the diameter in inches * PI
+        // (for each count, a rotation of the wheel travels 
+        // the diameter in inches * PI
         distanceTrip1/=inchesPerFoot*feetPerMile; // distance in miles
         distanceTrip2=countsTrip2*wheelDiameter*PI/inchesPerFoot/feetPerMile; // distance in miles
         totalDistance=distanceTrip1+distanceTrip2;
