@@ -44,6 +44,7 @@ public class Month { // define class
                 System.out.println("You did not enter an int"); // print statement to tell user input is invalid
                 return; // end program return to start
             } // end else
+               if ( yearNumber > 0 ) { // if year > 0 
                 yearRemainder = (yearNumber%4); // calculating if year has remainder when divided by 4
                     if ( yearRemainder == 0 ) { // if remainder == 0
                         System.out.println("The month has 29 days"); // print month has 29 days
@@ -51,6 +52,11 @@ public class Month { // define class
                     else { // if != 0 
                         System.out.println("The month has 28 days"); // print month has 28 days
                     } // end else
+               } // end if
+               else { // if not > 0
+                   System.out.println("You did not enter a positive int"); // then print year is not positive int
+                   return; // leave program
+               } // end else
         } // end else if
         else { // if not between 1-12
             System.out.println("You did not enter an int between 1 and 12"); // print the user statement is invalid
